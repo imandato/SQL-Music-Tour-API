@@ -18,12 +18,12 @@ module.exports = (sequelize, DataTypes) => {
       // event
       SetTime.belongsTo(Event, {
         foreignKey: "event_id",
-        as: "events"
+        as: "event"
       })
       // stage
       SetTime.belongsTo(Stage, {
         foreignKey: "stage_id",
-        as: "events"
+        as: "stage"
       })
     }
   }
